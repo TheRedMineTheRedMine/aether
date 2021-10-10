@@ -1,0 +1,317 @@
+section.first {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+    width: 85%;
+}
+
+.hello_div {
+    background: #ffb10f;
+    width: 70%;
+    height: 12em;
+    text-align: center;
+    padding: 7.5em 0 0 0;
+    border-radius: 1em;
+}
+
+.hello_div h3 {
+    font-family: 'montserrat';
+    color: #222;
+    font-size: 1.7em;
+}
+
+.hello_div .sub_title {
+    font-family: 'montserrat';
+    color: #222;
+    font-size: .9rem;
+    margin-top: 5px;
+}
+
+.user_infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    margin-left: 5%;
+    max-width: 300px;
+}
+
+.user_infos .usr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user_infos .usr img {
+    width: 10em; /* les mesures ont été calculées ici */
+    height: 10em;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 1em;
+    box-shadow: 8px 8px 60px 1px #444,
+                8px -8px 60px 1px #444,
+                -8px 8px 60px 1px #444,
+                -8px -8px 60px 1px #444;
+    z-index: -1;
+}
+
+.user_infos .usr span {
+    font-family: 'montserrat';
+    color: #ffb10f;
+    font-size: 1.3rem;
+    margin-top: 15px;
+    text-align: center;
+    z-index: 1;
+}
+
+.user_infos .box_links {
+    margin-top: 20px;
+    height: 3em;
+    padding: 1em;
+    width: calc(100% - 2em);
+    background: #111;
+    border-radius: 1em;
+    max-width: 120px;
+    box-shadow: 10px 10px 5em 4px #1a1a1a,
+                10px -10px 5em 4px #1a1a1a,
+                -10px 10px 5em 4px #1a1a1a,
+                -10px -10px 5em 4px #1a1a1a;
+}
+
+.user_infos .box_links div {
+    opacity: 1;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.user_infos .box_links div:hover { opacity: .8; }
+
+.user_infos .box_links div i {
+    position: absolute;
+    font-size: 1.4rem;
+    color: #ffb10f;
+}
+
+.user_infos .box_links div a {
+    position: relative;
+    text-decoration: none;
+    font-family: 'montserrat';
+    font-size: .9rem;
+    color: #fff;
+    top: 2px;
+    left: 1.7rem;
+}
+
+.user_infos .box_links .params {
+    position: relative;
+    top: 10px;
+}
+
+section.search {
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search_bar {
+    border: solid 2px #ffb10f;
+    background: #222;
+    border-radius: 2.5em;
+    width: 300px;
+    margin: 20px 0;
+    z-index: 1;
+}
+
+.search_bar label i {
+    font-size: 1.5rem;
+    margin: 6px 10px 8px 10px;
+    color: #ffb10f;
+    cursor: pointer;
+    opacity: 1;
+    transition: all .4s;
+}
+
+.search_bar label i:hover { opacity: .8; }
+
+.search_bar input {
+    margin: 0;
+    position: relative;
+    top: -1px;
+    left: -10px;
+    border: none;
+    outline: 0;
+    background: none;
+    font-family: 'montserrat';
+    font-size: 1.2rem;
+    width: calc(100% - 1.5rem - 30px);
+    text-align: center;
+    color: #fff;
+}
+
+.search_bar input::placeholder { color: #ffb10f; }
+
+.pages {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 20px 10px 0;
+    background: #ffb10f;
+    height: 2.5em;
+    width: calc(100% - 20px);
+    border-radius: 1em;
+    margin: 20px 0;
+    box-shadow: 5px 5px 2em 2em #333,
+                5px -5px 2em 2em #333,
+                -5px 5px 2em 2em #333,
+                -5px -5px 2em 2em #333;
+}
+
+.pages .margin { margin-left: 20px; }
+
+.pages .index {
+    margin-top: 5px;
+    font-family: 'montserrat';
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.pages .index span {
+    padding: 0 10px;
+    cursor: pointer;
+    pointer-events: fill;
+    opacity: 1;
+    transition: all .4s;
+}
+
+.pages .index span.selected {
+    background: #222;
+    border-radius: 10px;
+}
+
+.pages .index span:hover { opacity: .8; }
+
+.pages .text {
+    position: relative;
+    top: 8px;
+    left: calc(85vw - 400px);
+    font-family: 'montserrat-bold';
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: all .2s;
+    opacity: 1;
+    cursor: pointer;
+    color: #222;
+}
+
+.pages .text:hover {
+    text-decoration: underline 2px #222;
+    opacity: .9;
+}
+
+.results {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: -5px;
+    width: calc(100% - 10px);
+}
+
+.result {
+    border: 5px solid #ffb10f;
+    border-radius: 1em;
+    background: #222;
+    width: 36em;
+    height: 100px;
+    padding: 1em;
+    margin: 15px 0;
+}
+
+.result .part1, .result .part2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.result .re_title {
+    font-family: 'montserrat';
+    font-size: 1.2rem;
+    color: #ffb10f;
+    margin: 0 20px;
+}
+
+.result .part1 .infos {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+}
+
+.result .part1 .infos div {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    align-items: center;
+}
+
+.result .part1 .infos div i {
+    font-size: 1.5rem;
+    color: #ffb10f;
+    margin-bottom: 6px;
+}
+
+.result .part1 .infos div span {
+    font-family: 'montserrat';
+    font-size: 1rem;
+    color: #fff;
+}
+
+.result .part1 .release_date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.result .part1 .release_date .date_text {
+    font-family: 'montserrat';
+    font-size: .7rem;
+    color: #ffb10f;
+}
+
+.result .part1 .release_date .date {
+    font-family: 'montserrat';
+    margin-top: 5px;
+    font-size: .8rem;
+    color: #eee;
+}
+
+.result .part1 .parameters {
+    transform: rotate(90deg);
+    position: relative;
+    top: -.8em;
+    right: -2em;
+    cursor: pointer;
+}
+
+.result .part1 .parameters .icon {
+    color: #ffb10f;
+    font-size: 3rem;
+}
+
+.result .part1 .parameters:hover { opacity: .9; }
+
+.result .part2 { margin-top: 25px; }
+
+.result .part2 div {
+    font-family: 'montserrat';
+    color: #ddd;
+    font-size: .8rem;
+}
+
+.result .part2 .moderation { margin: 0 20px; }
+
+.result .part2 .moderation .active {
+    color: #ffb10f;
+    font-size: .9rem;
+    margin: 0 2px;
+    font-weight: thin;
+}
