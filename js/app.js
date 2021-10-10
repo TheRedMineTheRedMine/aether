@@ -13,5 +13,3 @@ menu_toggler.addEventListener('click', () => {
         menu_carret_toggler.classList.replace('fa-times', 'fa-bars');
     }
 });
-
-menu_toggler.click();
