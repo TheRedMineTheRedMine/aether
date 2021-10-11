@@ -41,6 +41,15 @@ svg:not(:root) { display: block }
 
 input[type="checkbox"] { cursor: pointer }
 
+.discord_link {
+    filter: invert(85%)
+            sepia(35%)
+            saturate(5474%)
+            hue-rotate(348deg)
+            brightness(103%)
+            contrast(104%);
+}
+
 @font-face {
     font-family: "montserrat";
     src: url("../fonts/montserrat/Montserrat-Regular.ttf") format("truetype");
@@ -70,9 +79,7 @@ header {
     height: 5.4em;
 }
 
-header.active {
-    height: 15em;
-}
+header.active { height: 22em; }
 
 .title {
     position: fixed;
@@ -96,7 +103,10 @@ header.active {
 .menu_lists {
     display: flex;
     flex-direction: row;
-    width: 24em;
+    position: relative;
+    width: 26em;
+    top: 6em;
+    margin-left: 1.3em;
 }
 
 .menu_lists ul {
@@ -145,6 +155,26 @@ header.active {
     font-size: 2.4rem;
 }
 
+.menu .img_box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 4em;
+    width: calc(calc(100vw - 40em) * 3 / 4);
+    height: auto;
+}
+
+.menu .img_box img {
+    object-fit: cover;
+    overflow: hidden;
+    height: calc(calc(100vw - 40em) * 1 / 4);
+    box-shadow: 10px 10px 5em 20px #1a1a1a,
+                10px -10px 5em 20px #1a1a1a,
+                -10px 10px 5em 20px #1a1a1a,
+                -10px -10px 5em 20px #1a1a1a;
+}
+
 .anim_toggler_menu {
     position: absolute;
     top: -12px;
@@ -158,3 +188,38 @@ header.active {
     z-index: -1;
     visibility: hidden;
 }
+
+.circle_links {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 14em;
+    height: 14em;
+    top: 8em;
+    right: 0;
+    background: #222;
+    list-style: none;
+    border-radius:  14em 0 0 0;
+    padding: 2em 0 0 3.6em;
+    visibility: hidden;
+}
+
+.circle_links li {
+    margin: 10px 0;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.circle_links li a { text-decoration: none; }
+
+.circle_links li a i {
+    font-size: 3rem;
+    color: #ffb10f;
+}
+
+.circle_links li a img { width: 2.8rem; }
+
+.circle_links.active { visibility: visible; }
+
+.circle_links li:hover { opacity: .9; }
