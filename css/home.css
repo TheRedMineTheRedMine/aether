@@ -1,6 +1,7 @@
 main {
     margin-top: 6em;
-    width: 100%;
+    width: calc(100vw - 3em);
+    padding-left: 2em;
 }
 
 section.first {
