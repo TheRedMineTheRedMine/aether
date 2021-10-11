@@ -162,6 +162,7 @@ header.active { height: 22em; }
     align-items: center;
     top: 4em;
     width: calc(calc(100vw - 40em) * 3 / 4);
+    min-width: 200px;
     height: auto;
 }
 
@@ -223,3 +224,94 @@ header.active { height: 22em; }
 .circle_links.active { visibility: visible; }
 
 .circle_links li:hover { opacity: .9; }
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: calc(100vw - 1em);
+    margin-top: 2em;
+}
+
+footer .part1,
+footer .part1 .links,
+footer .part2 {
+    display: flex;
+    flex-direction: row;
+}
+
+footer .part1 .links {
+    list-style: none;
+    margin: 3.5em;
+}
+
+footer .part1 .links li {
+    margin: 0 1em;
+    opacity: 1;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+footer .part1 .links li:hover { opacity: .8; }
+
+footer .part1 .links li a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+footer .part1 .p1_contact {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin: 3.5em 0 0 0;
+    right: 5em;
+    background: #333;
+    height: 1.5em;
+    width: 14em;
+    border-radius: 1.5em;
+}
+
+footer .part1 .p1_contact input {
+    background: none;
+    border: none;
+    outline: none;
+    font-family: 'montserrat';
+    margin: 0;
+    width: 13em;
+    height: 100%;
+    padding: 0 .5em;
+    color: #eee;
+}
+
+footer .part1 .p1_contact input::placeholder {
+    font-family: 'montserrat';
+    color: #888;
+    font-style: italic;
+}
+
+footer .part1 .p1_contact label {
+    position: relative;
+    display: inline-flex;
+    background: #ffb10f;
+    width: 2.8em;
+    border-radius: 1em;
+    height: 100%;
+    margin: 0;
+    align-items: center;
+}
+
+footer .part1 .p1_contact label i {
+    color: #fff;
+    font-size: 18px;
+    width: calc(100% - 2px);
+    text-align: center;
+}
+
+@media (max-width: 1100px) {
+    .menu .img_box {
+        display: none;
+    }
+}
+
+.box_newDiscuss {
+    display: none;
+}
