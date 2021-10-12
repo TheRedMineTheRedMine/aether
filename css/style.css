@@ -1,3 +1,4 @@
+/* déclaration des styles de base */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -31,16 +32,18 @@ html { box-sizing: border-box; }
 
 body { background-color: #222; }
 
+svg:not(:root) { display: block }
+
+input[type="checkbox"] { cursor: pointer }
+
+/* scrollbar */
 body::-webkit-scrollbar { width: 10px }
 
 body::-webkit-scrollbar-track { background: #161616; }
 
 body::-webkit-scrollbar-thumb { background-color: #444444 }
 
-svg:not(:root) { display: block }
-
-input[type="checkbox"] { cursor: pointer }
-
+/* image discord */
 .discord_link {
     filter: invert(85%)
             sepia(35%)
@@ -50,6 +53,7 @@ input[type="checkbox"] { cursor: pointer }
             contrast(104%);
 }
 
+/* espacements gris */
 .hr {
     position: relative;
     display: flex;
@@ -67,6 +71,7 @@ input[type="checkbox"] { cursor: pointer }
     background: #888;
 }
 
+/* polices d'écriture */
 @font-face {
     font-family: "montserrat";
     src: url("../fonts/montserrat/Montserrat-Regular.ttf") format("truetype");
@@ -87,6 +92,7 @@ input[type="checkbox"] { cursor: pointer }
     src: url("../fonts/montserrat/Montserrat-SemiBold.ttf") format("truetype");
 }
 
+/* en-tête de page */
 header {
     position: fixed;
     background: #111;
@@ -109,6 +115,7 @@ header.active { height: 22em; }
     color: #fff;
 }
 
+/* menu */
 .menu { display: none; }
 
 .menu.active {
@@ -242,6 +249,7 @@ header.active { height: 22em; }
 
 .circle_links li:hover { opacity: .9; }
 
+/* pied de page */
 footer {
     display: flex;
     flex-direction: column;
