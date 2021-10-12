@@ -50,6 +50,23 @@ input[type="checkbox"] { cursor: pointer }
             contrast(104%);
 }
 
+.hr {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: calc(100vw - .6em);
+    height: 2px;
+    align-items: center;
+}
+
+._hr {
+    width: 90%;
+    height: 1px;
+    border: none;
+    outline: none;
+    background: #888;
+}
+
 @font-face {
     font-family: "montserrat";
     src: url("../fonts/montserrat/Montserrat-Regular.ttf") format("truetype");
@@ -241,7 +258,7 @@ footer .part2 {
 
 footer .part1 .links {
     list-style: none;
-    margin: 3.5em;
+    margin: 2em 5vw;
 }
 
 footer .part1 .links li {
@@ -262,8 +279,8 @@ footer .part1 .p1_contact {
     display: flex;
     flex-direction: row;
     position: absolute;
-    margin: 3.5em 0 0 0;
-    right: 5em;
+    margin: 2em 0 0 0;
+    right: calc(5vw + .5em);
     background: #333;
     height: 1.5em;
     width: 14em;
@@ -297,7 +314,12 @@ footer .part1 .p1_contact label {
     height: 100%;
     margin: 0;
     align-items: center;
+    cursor: pointer;
+    opacity: 1;
+    transition: all .4s;
 }
+
+footer .part1 .p1_contact label:hover { opacity: .9; }
 
 footer .part1 .p1_contact label i {
     color: #fff;
@@ -305,6 +327,44 @@ footer .part1 .p1_contact label i {
     width: calc(100% - 2px);
     text-align: center;
 }
+
+footer .part2 .links {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 1.6em 5vw;
+}
+
+footer .part2 .links li {
+    cursor: pointer;
+    opacity: 1;
+    transition: all .4s;
+    margin: 0 1em;
+}
+
+footer .part2 .links li:hover { opacity: .8; }
+
+footer .part2 .links li a {
+    color: #ddd;
+    font-size: 3em;
+}
+
+footer .part2 .links .discord_link {
+    position: relative;
+    filter: invert(1);
+    width: 1.1em;
+    top: 3px;
+}
+
+footer .part2 .authors {
+    position: absolute;
+    margin-top: 1.2em;
+    right: 5vw;
+    list-style: none;
+    color: #ddd;
+}
+
+footer .part2 .authors span { color: #ffb10f; }
 
 @media (max-width: 1100px) {
     .menu .img_box {
