@@ -367,3 +367,73 @@ section.search {
     margin: 0 2px;
     font-weight: thin;
 }
+
+.box_newDiscuss {
+    opacity: 0;
+    transition: all 1s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #222;
+    z-index: -10;
+    padding-top: calc(50vw - 4em);
+}
+
+.box_newDiscuss i {
+    color: #ffb10f;
+    font-size: 2.5rem;
+    position: absolute;
+    right: 3em;
+    top: calc(50vw - 4em);
+    opacity: 1;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.box_newDiscuss i:hover { opacity: .8; }
+
+.box_newDiscuss,
+.box_newDiscuss .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box_newDiscuss .content h2 {
+    color: #eee;
+    margin: 1em;
+}
+
+.box_newDiscuss .content form input[type="text"] {
+    background: #000;
+    border: none;
+    padding: 5px 7px;
+    border-radius: 20px;
+    width: 200px;
+    font-family: 'montserrat';
+    color: #fff;
+    outline: none;
+}
+
+.box_newDiscuss .content form input[type="text"]::placeholder { color: #888; }
+
+.box_newDiscuss .content form input[type="submit"] {
+    border: solid #ddd 1px;
+    background: #000;
+    padding: 5px 7px;
+    color: #fff;
+    font-family: 'montserrat';
+    border-radius: 20px;
+    cursor: pointer;
+    opacity: 1;
+    transition: all .4s;
+}
+
+.box_newDiscuss .content form input[type="submit"]:hover { opacity: .7; }
+
+.box_newDiscuss.active {
+    opacity: .9;
+    z-index: 10;
+}
