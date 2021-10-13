@@ -74,22 +74,22 @@ body::-webkit-scrollbar-thumb { background-color: #444444 }
 /* polices d'écriture */
 @font-face {
     font-family: "montserrat";
-    src: url("../fonts/montserrat/Montserrat-Regular.ttf") format("truetype");
+    src: url("https://theredminetheredmine.github.io/aether/fonts/montserrat/Montserrat-Regular.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "montserrat-bold";
-    src: url("../fonts/montserrat/Montserrat-SemiBold.ttf") format("truetype");
+    src: url("https://theredminetheredmine.github.io/aether/fonts/montserrat/Montserrat-SemiBold.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Raleway";
-    src: url("../fonts/Raleway/Raleway-Regular.ttf") format("truetype");
+    src: url("https://theredminetheredmine.github.io/aether/fonts/Raleway/Raleway-Regular.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Raleway-bold";
-    src: url("../fonts/montserrat/Montserrat-SemiBold.ttf") format("truetype");
+    src: url("https://theredminetheredmine.github.io/aether/fonts/montserrat/Montserrat-SemiBold.ttf") format("truetype");
 }
 
 /* en-tête de page */
