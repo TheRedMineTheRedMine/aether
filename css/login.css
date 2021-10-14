@@ -1,0 +1,80 @@
+main, .connect, .connect form {
+    display: flex;
+    flex-direction: column;
+}
+
+.page {
+    margin: 5px calc(2em + 10px);
+    color: #eee;
+    font-size: .9rem;
+}
+
+h2 {
+    color: #ffb01f;
+    text-align: center;
+    font-size: 2rem;
+    margin: 3em 0 20px;
+}
+
+.connect form { align-items: center; }
+
+.connect form .input_box {
+    background: #151515;
+    width: 18em;
+    height: 40px;
+    margin: 5px 0;
+    border-radius: 25px;
+}
+
+.connect form .input_box input {
+    background: none;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #eee;
+    padding: 10px 12px;
+    font-family: 'montserrat';
+    font-size: 1.1rem;
+    z-index: 1;
+}
+
+.connect form .input_box input::placeholder {
+    color: #888;
+    font-family: 'montserrat-bold';
+    font-size: 1rem;
+}
+
+.connect form .input_box.passwd i {
+    position: relative;
+    top: -30px;
+    left: 250px;
+    color: #888;
+    opacity: 1;
+    transition: all .4s;
+    cursor: pointer;
+    font-size: 1.2rem;
+    z-index: 2;
+}
+
+.connect form .input_box.passwd i:hover { opacity: .8; }
+
+.connect form .button input {
+    margin: 2em 0 4em;
+    background: #ffb01f;
+    color: #fff;
+    font-family: 'montserrat';
+    padding: 8px 12px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all .4s;
+    opacity: 1;
+}
+
+.connect form .button input:hover {
+    opacity: 88%;
+}
