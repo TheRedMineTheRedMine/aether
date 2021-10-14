@@ -1,0 +1,33 @@
+main { margin-top: 8em; }
+
+.edit .part1 {
+    width: 15vw;
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.edit .image_box {
+    width: 100%;
+    border: solid 3px #ffb01f;
+    border-radius: 1em;
+    padding: .5em;
+}
+
+.edit .image_box img {
+    width: 15vw;
+    height: 15vw;
+    object-fit: cover;
+    border-radius: 1em;
+    cursor: pointer;
+    opacity: 1;
+    transition: all .4s;
+}
+
+.edit .image_box img:hover { opacity: 85%; }
+
+.edit .username {
+    color: #fff;
+    font-size: 1.5rem;
+}
