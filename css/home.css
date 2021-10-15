@@ -234,6 +234,7 @@ section.search {
     padding: 1em;
     margin: 15px 0;
     min-width: 500px;
+    cursor: pointer;
 }
 
 .result .part1, .result .part2 {
