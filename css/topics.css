@@ -37,6 +37,8 @@
     border-radius: 5px;
 }
 
+.message .part2 .content { width: 24em; }
+
 .write form {
     display: flex;
     flex-direction: row;
