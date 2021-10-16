@@ -1,0 +1,84 @@
+.messages {
+    display: flex;
+    flex-direction: column;
+}
+
+.message { margin: 1.5em; }
+
+.message.d { margin: 1.5em 5em; }
+
+.message .part1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.message .part1 img {
+    width: 3em;
+    height: 3em;
+    object-fit: cover;
+    border-radius: 4em;
+}
+
+.message .part1 .user {
+    position: relative;
+    top: 0.8em;
+    font-size: 1.1rem;
+    color: #eee;
+    left: 10px;
+}
+
+.message .part2 {
+    position: relative;
+    margin-left: 3.2em;
+    background-color: #444;
+    width: 25em;
+    color: #fff;
+    padding: 10px 12px;
+    border-radius: 5px;
+}
+
+.write form {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    background: #1a1a1a;
+    height: 3em;
+    padding: 1em;
+}
+
+.write form .input_text {
+    width: calc(95vw - 2em);
+    background: #282828;
+    border-radius: 10px;
+}
+
+.write form .input_text input {
+    font-family: 'montserrat';
+    background: none;
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 100%;
+    padding: 0 10px;
+    color: #eee;
+}
+
+.write form .input_text input::placeholder { color: #777; }
+
+.write form .submit {
+    position: relative;
+    top: .5em;
+    left: 2vw;
+}
+
+.write form .submit label i {
+    color: #ffb01f;
+    font-size: 2em;
+    cursor: pointer;
+    transition: all .4s;
+    opacity: 1;
+}
+
+.write form .submit label:hover i { opacity: 85%; }
