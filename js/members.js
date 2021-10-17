@@ -1,4 +1,4 @@
-const users = document.querySelectorAll('.sort > .member')
+const users = document.querySelectorAll('.sort > .member');
 
 [].forEach.call(users, el => {
     el.addEventListener('click', () => {
