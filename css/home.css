@@ -13,10 +13,12 @@ section.first {
     width: 85%;
 }
 
+section.first.user .hello_div { width: calc(70% - 4em); }
+
 .hello_div {
     background: #ffb10f;
-    width: calc(70% - 4em);
     height: 10em;
+    width: 100%;
     text-align: center;
     padding: 7.5em 2em 2em;
     border-radius: 1em;
@@ -371,15 +373,15 @@ section.search {
 
 .box_newDiscuss {
     opacity: 0;
+    background: #222222dd;
     transition: all 1s;
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: #222;
     z-index: -10;
-    padding-top: calc(50vw - 4em);
+    padding-top: calc(25vw - 4em);
 }
 
 .box_newDiscuss i {
@@ -387,7 +389,7 @@ section.search {
     font-size: 2.5rem;
     position: absolute;
     right: 3em;
-    top: calc(50vw - 4em);
+    top: calc(25vw - 4em);
     opacity: 1;
     transition: all .4s;
     cursor: pointer;
@@ -396,10 +398,16 @@ section.search {
 .box_newDiscuss i:hover { opacity: .8; }
 
 .box_newDiscuss,
-.box_newDiscuss .content {
+.box_newDiscuss .content,
+.box_newDiscuss .content form {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.box_newDiscuss .content {
+    background: #111;
+    padding-bottom: 1.6em;
 }
 
 .box_newDiscuss .content h2 {
@@ -418,11 +426,49 @@ section.search {
     outline: none;
 }
 
-.box_newDiscuss .content form input[type="text"]::placeholder { color: #888; }
+.box_newDiscuss .content form input[type="text"]::placeholder { color: #aaa; }
+
+.box_newDiscuss .content form input[type="checkbox"] {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    top: 8px;
+    -webkit-appearance: none;
+    background: #ddd;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, .2);
+    transition: .5s;
+}
+
+.box_newDiscuss .content form input[type="checkbox"]:checked { background: #ffb10f; }
+
+.box_newDiscuss .content form input[type="checkbox"]::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    background: #ffb10f;
+    transform: scale(1.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .5);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.box_newDiscuss .content form input[type="checkbox"]:checked::before { left: 20px; }
+
+.box_newDiscuss .content form .checkbox_m .text {
+    cursor: pointer;
+    color: #eee;
+    font-size: 1rem;
+}
 
 .box_newDiscuss .content form input[type="submit"] {
     border: solid #ddd 1px;
-    background: #000;
+    background: #111;
     padding: 5px 7px;
     color: #fff;
     font-family: 'montserrat';
@@ -435,6 +481,6 @@ section.search {
 .box_newDiscuss .content form input[type="submit"]:hover { opacity: .7; }
 
 .box_newDiscuss.active {
-    opacity: .9;
+    opacity: 95%;
     z-index: 10;
 }
