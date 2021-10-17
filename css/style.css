@@ -71,6 +71,8 @@ body::-webkit-scrollbar-thumb { background-color: #444444 }
     background: #888;
 }
 
+._hr.o { background: #ffb01f; }
+
 /* polices d'écriture */
 @font-face {
     font-family: "montserrat";
