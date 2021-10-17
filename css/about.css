@@ -1,0 +1,74 @@
+main { margin-top: 8em; }
+
+.top {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main.user .top { width: calc(100vw - 20em); }
+
+.top .location {
+    width: calc(90% - .3em);
+    color: #eee;
+    margin-bottom: 1em;
+    cursor: default;
+}
+
+main.user .top .hr { width: 100%; }
+
+section.text { margin: 0 -2.5em 2em 2.5em; }
+
+section.text h2 {
+    color: #ffb01f;
+    margin: 1em 0 1em 1.8em;
+    cursor: default;
+}
+
+section.text .hr {
+    margin-left: 2.4em;
+    width: 5em;
+}
+
+section.text .text {
+    margin: 2em 2.5em;
+    width: 60%;
+    font-size: 1rem;
+    color: #eee;
+    cursor: default;
+}
+
+section.text .text span { color: #ffb01f; }
+
+section.text .text span a,
+section.text .text .admin li a {
+    color: #ffb01f;
+    cursor: pointer;
+    transition: all .2s;
+    opacity: 1;
+    text-decoration: none;
+}
+
+section.text .text span a:hover,
+section.text .text .admin li a:hover {
+    text-decoration: underline 1px solid #ffb01f88;
+    opacity: 80%;
+}
+
+section.text .text ul { list-style: circle; }
+
+section.text .text ul li { margin-left: 2em; }
+
+section.text .text span.discord a {
+    color: #ffb01f;
+    text-decoration: underline 1px solid #ffb01f;
+    opacity: 1;
+    cursor: pointer;
+    transition: 0;
+}
+
+section.text .text span.discord:hover a {
+    opacity: 1 !important;
+    text-decoration: underline 1px solid #ffb01f !important;
+}
