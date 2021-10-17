@@ -1,0 +1,204 @@
+main { margin-top: 8em; }
+
+.top {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main.user .top { width: calc(100vw - 20em); }
+
+.top .location {
+    width: calc(90% - .3em);
+    color: #eee;
+    margin-bottom: 1em;
+}
+
+main.user .top .hr { width: 100%; }
+
+.top .search-bar {
+    border: solid 2px #ffb10f;
+    background: #222;
+    border-radius: 2.5em;
+    width: 300px;
+    margin: 20px 0;
+    z-index: 1;
+}
+
+.top .search-bar label i {
+    font-size: 1.5rem;
+    margin: 6px 10px 8px 10px;
+    color: #ffb10f;
+    cursor: pointer;
+    opacity: 1;
+    transition: all .4s;
+}
+
+.top .search-bar label i:hover { opacity: .8; }
+
+.top .search-bar input {
+    margin: 0;
+    position: relative;
+    top: -1px;
+    left: -8px;
+    border: none;
+    outline: 0;
+    background: none;
+    font-family: 'montserrat';
+    font-size: 1.2rem;
+    width: calc(100% - 1.5rem - 30px);
+    text-align: center;
+    color: #fff;
+}
+
+.search_bar input::placeholder { color: #ffb10f; }
+
+.user_infos {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    margin-left: 5%;
+    max-width: 300px;
+    top: 10em;
+    right: 1em;
+}
+
+.user_infos .usr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user_infos .usr img {
+    width: 10em; /* les mesures ont été calculées ici */
+    height: 10em;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 1em;
+    box-shadow: 8px 8px 60px 1px #3a3a3a,
+                8px -8px 60px 1px #3a3a3a,
+                -8px 8px 60px 1px #3a3a3a,
+                -8px -8px 60px 1px #3a3a3a;
+    z-index: -1;
+}
+
+.user_infos .usr span {
+    font-family: 'montserrat';
+    color: #ffb10f;
+    font-size: 1.3rem;
+    margin-top: 15px;
+    text-align: center;
+    z-index: 1;
+}
+
+.user_infos .box_links {
+    margin-top: 20px;
+    height: 3em;
+    padding: 1em;
+    width: calc(100% - 2em);
+    background: #111;
+    border-radius: 1em;
+    max-width: 120px;
+    box-shadow: 10px 10px 5em 4px #1a1a1a,
+                10px -10px 5em 4px #1a1a1a,
+                -10px 10px 5em 4px #1a1a1a,
+                -10px -10px 5em 4px #1a1a1a;
+}
+
+.user_infos .box_links div {
+    opacity: 1;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.user_infos .box_links div:hover { opacity: .8; }
+
+.user_infos .box_links div i {
+    position: absolute;
+    font-size: 1.4rem;
+    color: #ffb10f;
+}
+
+.user_infos .box_links div a {
+    position: relative;
+    text-decoration: none;
+    font-family: 'montserrat';
+    font-size: .9rem;
+    color: #fff;
+    top: 2px;
+    left: 1.7rem;
+}
+
+.user_infos .box_links .params {
+    position: relative;
+    top: 10px;
+}
+
+.sort {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100vw;
+}
+
+main.user .sort { max-width: calc(100vw - 20em); }
+
+.sort .member {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 2.5em 3.5em;
+    padding: 5px;
+    height: 20em;
+    max-width: 100vw;
+    width: 11em;
+}
+
+.sort .member .avatar {
+    box-shadow: 3px 3px 2em 1em #333,
+                3px -3px 2em 1em #333,
+                -3px 3px 2em 1em #333,
+                -3px -3px 2em 1em #333;
+    border-radius: 1em;
+}
+
+.sort .member .avatar img {
+    width: 10em;
+    height: 10em;
+    object-fit: cover;
+    border-radius: 1em;
+}
+
+.sort .member div { text-align: center; }
+
+.sort .member .usr {
+    font-size: 1.5rem;
+    margin-top: 1em;
+    color: #ffb10f;
+}
+
+.sort .member .grade {
+    color: #ccc;
+    font-size: .9rem;
+    margin: 5px 0;
+}
+
+.sort .member .add_friend {
+    padding: 10px 12px;
+    background: #333;
+    border-radius: 5px;
+    color: #eee;
+    cursor: pointer;
+    transition: all .4s ease-in;
+    opacity: 1;
+    text-decoration: none;
+    margin: 1em 0;
+}
+
+.sort .member .add_friend:hover {
+    opacity: 75%;
+    text-decoration: underline 1px #888;
+}
