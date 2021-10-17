@@ -37,11 +37,15 @@ svg:not(:root) { display: block }
 input[type="checkbox"] { cursor: pointer }
 
 /* scrollbar */
-body::-webkit-scrollbar { width: 10px }
+body::-webkit-scrollbar { width: 10px; }
 
 body::-webkit-scrollbar-track { background: #161616; }
 
-body::-webkit-scrollbar-thumb { background-color: #444444 }
+body::-webkit-scrollbar-thumb {
+    background-color: #444444;
+    border-radius: 20px;
+    border: 3px solid #161616;
+}
 
 /* image discord */
 .discord_link {
