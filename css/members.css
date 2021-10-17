@@ -163,13 +163,19 @@ main.user .sort { max-width: calc(100vw - 20em); }
                 -3px 3px 2em 1em #333,
                 -3px -3px 2em 1em #333;
     border-radius: 1em;
+    cursor: pointer;
+    opacity: 1;
+    transition: all .4s;
 }
+
+.sort .member .avatar:hover { opacity: 80%; }
 
 .sort .member .avatar img {
     width: 10em;
     height: 10em;
     object-fit: cover;
     border-radius: 1em;
+    pointer-events: none;
 }
 
 .sort .member div { text-align: center; }
