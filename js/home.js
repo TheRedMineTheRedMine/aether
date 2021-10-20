@@ -5,7 +5,7 @@ const options = document.querySelector('.result .part1 .options');
 
 [].forEach.call(topics, el => {
     el.addEventListener('click', () => {
-        window.location.replace(("../discuss?q=" + el.dataset.id))
+        window.location.replace(("../topics?q=" + el.dataset.id))
     })
 });
 
